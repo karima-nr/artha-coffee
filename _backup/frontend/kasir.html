@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Coffee - KASIR MODE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kasir.css">
+</head>
+<body class="kasir-body">
+    <!-- Header Kasir -->
+    <header class="kasir-header">
+        <div class="container">
+            <h1><i class="fas fa-cash-register"></i> ART COFFEE KASIR</h1>
+            <div class="kasir-info">
+                <span class="order-id">No. Order: <span id="orderNumber">001</span></span>
+                <span class="datetime" id="datetime"></span>
+                <button onclick="printReceipt()" class="print-btn"><i class="fas fa-print"></i> PRINT</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Kasir Area -->
+    <div class="kasir-container">
+        <!-- Product Categories -->
+        <div class="categories">
+            <button class="cat-btn active" data-cat="all">SEMUA</button>
+            <button class="cat-btn" data-cat="latte">LATTE</button>
+            <button class="cat-btn" data-cat="matcha">MATCHA</button>
+            <button class="cat-btn" data-cat="kopi">KOPI</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="kasirProducts">
+            <!-- Products loaded by JS -->
+        </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+        <div class="summary-header">
+            <h3>PESANAN</h3>
+            <button onclick="clearOrder()" class="clear-btn"><i class="fas fa-trash"></i> CLEAR</button>
+        </div>
+        
+        <div class="order-items" id="orderItems">
+            <!-- Items added here -->
+        </div>
+        
+        <div class="order-total">
+            <div class="total-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">Rp 0</span>
+            </div>
+            <div class="total-row">
+                <span>Diskon (10%):</span>
+                <span id="discount">Rp 0</span>
+            </div>
+            <hr>
+            <div class="total-row grand-total">
+                <span><strong>TOTAL BAYAR:</strong></span>
+                <span id="grandTotal"><strong>Rp 0</strong></span>
+            </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="payment-section">
+            <input type="number" id="cashInput" placeholder="Uang Tunai" min="0">
+            <div class="change-display">
+                <span>Kembali:</span>
+                <span id="changeAmount">Rp 0</span>
+            </div>
+            <button onclick="processPayment()" class="pay-btn">
+                <i class="fas fa-credit-card"></i> BAYAR
+            </button>
+        </div>
+    </div>
+
+    <script src="../backend/api/products.php"></script>
+    <script src="kasir.js"></script>
+</body>
+</html>

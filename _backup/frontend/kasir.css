@@ -1,0 +1,263 @@
+/* Kasir Mode Styles */
+.kasir-body {
+    background: linear-gradient(135deg, #4B3621 0%, #F5F5DC 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kasir-header {
+    background: #2C1A0F;
+    color: #F5F5DC;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.kasir-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.kasir-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.print-btn {
+    background: #84BD00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.print-btn:hover {
+    background: #6BA300;
+    transform: scale(1.05);
+}
+
+.kasir-container {
+    display: flex;
+    height: calc(100vh - 140px);
+    padding: 20px;
+    gap: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.cat-btn {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cat-btn.active,
+.cat-btn:hover {
+    background: #84BD00;
+    transform: translateX(5px);
+}
+
+.products-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.kasir-product {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.kasir-product:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.kasir-product img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.kasir-product h4 {
+    font-size: 1.1rem;
+    color: #4B3621;
+    margin-bottom: 5px;
+}
+
+.kasir-product .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #84BD00;
+}
+
+.order-summary {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    height: fit-content;
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.clear-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.order-items {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-total {
+    margin-bottom: 20px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1.1rem;
+}
+
+.grand-total {
+    font-size: 1.4rem;
+    color: #4B3621;
+    padding-top: 15px;
+    border-top: 2px solid #84BD00;
+}
+
+.payment-section {
+    background: #F5F5DC;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.payment-section input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.change-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #84BD00;
+    margin-bottom: 20px;
+}
+
+.pay-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #84BD00, #6BA300);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pay-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(132, 189, 0, 0.4);
+}
+
+/* Print Styles */
+@media print {
+    .kasir-header, .categories, .payment-section { display: none !important; }
+    .order-summary { 
+        width: 100% !important; 
+        box-shadow: none !important;
+        border: 2px dashed #4B3621;
+    }
+    body { 
+        background: white !important; 
+        padding: 20px !important;
+    }
+}
+
+/* Mobile Kasir */
+@media (max-width: 768px) {
+    .kasir-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .order-summary {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .kasir-container {
+        padding-bottom: 500px;
+    }
+}
