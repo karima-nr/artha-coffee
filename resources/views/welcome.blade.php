@@ -77,7 +77,7 @@
                 <div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-coffee-900 group-hover:rotate-180 transition-transform duration-700">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>
-                ART<span class="text-gold">COFFEE</span>
+                Z<span class="text-gold">COFFEE</span>
             </a>
             
             <div class="hidden md:flex items-center gap-10 text-sm font-semibold tracking-wide">

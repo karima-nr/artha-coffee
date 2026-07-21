@@ -26,7 +26,7 @@
         <!-- Sidebar -->
         <aside :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full'" class="fixed inset-y-0 left-0 z-50 w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-auto">
             <div class="flex items-center justify-center h-16 border-b border-gray-200 dark:border-gray-700">
-                <span class="text-2xl font-semibold text-amber-600 dark:text-amber-400">Art Coffee</span>
+                <span class="text-2xl font-semibold text-amber-600 dark:text-amber-400">ZCOFFEE HENING</span>
             </div>
             
             <nav class="p-4 space-y-2">
