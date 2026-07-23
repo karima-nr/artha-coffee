@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Coffee - Premium Experience</title>
+    <title>ZCoffe Hening - Premium Experience</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -332,7 +332,7 @@
                     <p class="text-gold font-bold tracking-widest uppercase mb-4 text-sm">Cerita Kami</p>
                     <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8 leading-tight">Membawa <span class="font-serif italic text-gold">Seni</span> ke Dalam Setiap Seduhan</h2>
                     <div class="space-y-6 text-gray-400 text-lg font-light leading-relaxed">
-                        <p>Berawal dari sebuah garasi kecil di tahun 2021, <span class="text-white font-semibold">Art Coffee</span> lahir with satu misi sederhana: menjadikan kopi berkualitas dapat dinikmati oleh semua orang dengan cara yang artistik.</p>
+                        <p>Berawal dari sebuah garasi kecil di tahun 2021, <span class="text-white font-semibold">ZCoffee Hening</span> lahir with satu misi sederhana: menjadikan kopi berkualitas dapat dinikmati oleh semua orang dengan cara yang artistik.</p>
                         <p>Kami tidak hanya menyajikan minuman, kami menyajikan <span class="text-gold italic">pengalaman</span>. Menggunakan biji kopi pilihan dari petani lokal Nusantara, setiap gelas yang sampai ke tangan Anda adalah hasil dari dedikasi dan cinta kami terhadap seni perkopian.</p>
                     </div>
                     <div class="mt-12 flex gap-8">
@@ -507,7 +507,7 @@
                     <div class="flex items-center gap-4 mt-auto border-t border-white/5 pt-4">
                         <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center font-bold text-coffee-900 shadow-lg">A</div>
                         <div>
-                            <h4 class="font-bold text-white">Andini Putri</h4>
+                            <h4 class="font-bold text-white">Nida</h4>
                             <span class="text-xs text-gold uppercase tracking-wider">Pecinta Kopi</span>
                         </div>
                     </div>
@@ -519,11 +519,11 @@
                             <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         @endfor
                     </div>
-                    <p class="text-gray-300 mb-8 font-light leading-relaxed">"Art Coffee bener-bener gila! Harganya bersahabat tapi rasanya bintang lima. Favorit saya Caramel Macchiato-nya."</p>
+                    <p class="text-gray-300 mb-8 font-light leading-relaxed">"ZCoffee Hening bener-bener gila! Harganya bersahabat tapi rasanya bintang lima. Favorit saya Caramel Macchiato-nya."</p>
                     <div class="flex items-center gap-4 mt-auto border-t border-white/5 pt-4">
                         <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center font-bold text-coffee-900 shadow-lg">B</div>
                         <div>
-                            <h4 class="font-bold text-white">Budi Santoso</h4>
+                            <h4 class="font-bold text-white">Dwi Luthfiana Furqon</h4>
                             <span class="text-xs text-gold uppercase tracking-wider">Pelanggan Setia</span>
                         </div>
                     </div>
@@ -541,7 +541,7 @@
                     <div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-coffee-900">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
-                    ART<span class="text-gold">COFFEE</span>
+                    ZCOFFE<span class="text-gold">HENING</span>
                 </div>
                 <div class="flex gap-6">
                     <a href="#" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold/50 transition-all">
@@ -553,7 +553,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <p class="text-gray-600 text-sm">© {{ date('Y') }} Art Coffee System. Dibuat dengan <span class="text-gold">♥</span> untuk pecinta kopi.</p>
+                <p class="text-gray-600 text-sm">© {{ date('Y') }} ZCoffee Hening System. Dibuat dengan <span class="text-gold">♥</span> untuk pecinta kopi.</p>
                 <p class="text-gray-700 text-[10px] mt-4 uppercase tracking-[0.2em] font-medium opacity-50">
                     dikembangkan oleh Ari Fujiyono Mahasiswa Universitas Darunnajah
                 </p>
