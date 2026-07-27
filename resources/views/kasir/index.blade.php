@@ -64,7 +64,7 @@
     <header class="bg-white shadow-md min-h-[64px] py-3 lg:py-0 lg:h-16 flex flex-col lg:flex-row items-center justify-between px-4 lg:px-6 z-10 border-b border-gray-200">
         <div class="flex items-center justify-between w-full lg:w-auto">
             <div class="flex items-center gap-3">
-                <h1 class="text-lg md:text-xl font-bold text-amber-700">Art Coffee POS</h1>
+                <h1 class="text-lg md:text-xl font-bold text-amber-700">ZCoffee Hening POS</h1>
                 <span class="hidden md:block text-xs text-gray-400 font-semibold bg-gray-100 px-3 py-1 rounded-full" x-text="currentTime"></span>
             </div>
             <!-- Mobile User & Logout -->
